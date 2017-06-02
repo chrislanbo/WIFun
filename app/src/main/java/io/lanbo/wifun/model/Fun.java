@@ -15,7 +15,7 @@ import java.util.List;
  * 接口数据
  */
 
-class Fun {
+public class Fun {
 
     private List<DataBean> data;
 
