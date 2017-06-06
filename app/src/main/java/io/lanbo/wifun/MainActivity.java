@@ -10,7 +10,7 @@ import android.widget.TextView;
 import io.lanbo.wifun.api.FunInterImpl;
 
 public class MainActivity extends AppCompatActivity {
-    private static String TEST_URL = "http://japi.juhe.cn/joke/img/text.from?page=3&pagesize=3&key=7bb45624a1ac6a2cd42719716d8f77f6";
+    private static String TEST_URL = "http://japi.juhe.cn/joke/content/";
 
     private TextView mTextMessage;
 
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-        FunInterImpl.getIntance().test("7bb45624a1ac6a2cd42719716d8f77f6",3,3);
+        new FunInterImpl(TEST_URL).test("7bb45624a1ac6a2cd42719716d8f77f6",3,3);
     }
 
 }
