@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">微.笑</string>
     <string name="title_home">主页</string>
-    <string name="title_dashboard">笑笑</string>
-    <string name="title_notifications">我的</string>
+    <string name="title_mine">我的</string>
+    <string name="title_mCoin">蜜金币</string>
+    <string name="title_shop_cart">购物车</string>
 </resources>
